@@ -1,0 +1,67 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#menu{  
+    border:0px solid blue;
+    width:500px;
+    height:auto;
+    float: left;
+    margin: 70px 0 0 200px;
+}
+
+#layout_onibus{
+        position: relative;
+    border: 0px solid #d8cdcd;
+    width: 265px;
+    /* float: right; */
+    /* margin-right: 300px; */
+    height: 700px;
+    background-image: url(../images/img-onibus.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.poltrona_esquerda{
+
+      position: absolute;
+    border: 0px solid red;
+    padding: 0 0 0 4px;
+    margin: 134px 0 0 35px;
+    width: 180px;
+    height: 350px;
+    text-align: center;
+    padding-top: 8px;
+
+}
+
+#layout_onibus td{
+    text-align: center;
+    height: 34px; 
+    width: 36px; 
+    border:0px solid blue; 
+    margin: 0;
+    padding: 0;
+
+    outline: 0;  
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    text-indent: 2px;
+    
+    vertical-align: baseline;
+}
+#legenda{margin: 0 auto; display: block }
+
+.red{background-color:red;width: 20px; height: 20px;     display: block;}
+.verde{background-color:green;width: 20px; height: 20px;     display: block;}
+.livre{background: url("../images/poltrona-livre.png") top center no-repeat;}
+.ocupada{ background: url("../images/poltrona-ocupada.png") top center no-repeat;}
+.bloqueada{ background: url("../images/poltrona-bloqueada.fw.png") top center no-repeat;}
+
+
+#header{border: 1px solid blue}

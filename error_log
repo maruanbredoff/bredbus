@@ -1,0 +1,666 @@
+[03-Feb-2019 22:37:06 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 10
+[03-Feb-2019 22:37:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:37:06 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:37:26 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 10
+[03-Feb-2019 22:37:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:37:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:40:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 10
+[03-Feb-2019 22:40:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:40:19 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:41:03 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 10
+[03-Feb-2019 22:41:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[03-Feb-2019 22:41:03 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 17
+[04-Feb-2019 00:43:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:43:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(7): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:47:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:47:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(7): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:52:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:52:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(7): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:58:25 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 00:58:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:01:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:01:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:06:15 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:06:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:06:55 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:07:06 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:31:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:31:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:31:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:31:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:31:47 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:31:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/michella/public_html/config.php:8
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:32:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:32:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:32:53 UTC] PHP Fatal error:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:33:33 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 11
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:33:33 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:34:34 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 01:34:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:20:16 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 09:20:16 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:21:15 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 09:21:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, string given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:01:04 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:01:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:10 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:06:10 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, string given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:26 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 13
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:06:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 20
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:12:52 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:12:52 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:17:21 UTC] PHP Warning:  include(../config.php): failed to open stream: No such file or directory in /home/michella/public_html/validacao.php on line 10
+[04-Feb-2019 14:17:21 UTC] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/michella/public_html/validacao.php on line 10
+[04-Feb-2019 14:17:21 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:17:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:17:21 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:20:05 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:20:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:36:24 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:36:24 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:36:24 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:36:24 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:42:28 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:42:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:49:58 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:49:58 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:53:25 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:53:25 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:55:50 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:55:50 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:57:33 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 14:57:33 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:52:43 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:52:43 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:53:35 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:53:35 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:53:38 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:53:38 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:54:25 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:54:25 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:54:26 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:54:26 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:09 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 15:55:09 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:55:09 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:55:09 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:18 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:55:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:58:42 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 15:58:42 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 15:58:42 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 15:58:42 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 16:01:32 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:01:32 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:01:35 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:01:35 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:02:25 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:02:25 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:02:43 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:02:43 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:02:45 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:02:45 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:02:47 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:02:47 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:03:18 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:03:18 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 16:16:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:16:33 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:17:09 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:17:09 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:17:44 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:19:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:19:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:19:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:19:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 16:21:10 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 16:21:10 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 16:21:29 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 16:21:29 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 17:27:47 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 17:27:48 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:51:34 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 18:51:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:55:43 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 18:55:43 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:04 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:02:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:46 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:02:46 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:04:23 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:04:23 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:11:30 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:11:30 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:13:21 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:13:22 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:13:22 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:13:22 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:13:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:13:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:13:22 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:23:47 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:23:47 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:26:59 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:26:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:34:24 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:34:24 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:42:22 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:42:22 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:47:18 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:47:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:57:41 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 19:57:41 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:12 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:18 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:18 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:49 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:15:49 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:19:17 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:19:17 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:01 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:01 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:05 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:15 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:20:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:21:58 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:07 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:11 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:13 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:24:15 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_teste'@'localhost' to database 'michella_teste' in /home/michella/public_html/testedb.php on line 8
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_db'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:25:26 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:25:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:27:59 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:27:59 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:27:59 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:27:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:01 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:28:01 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:01 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:01 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:03 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:28:03 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:03 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:03 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:04 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:28:04 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:04 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:04 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:05 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:28:05 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:05 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:05 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:07 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:28:07 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:28:07 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:28:07 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:26 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:26 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:26 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:26 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:28 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:28 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:28 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:29 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:29 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:29 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:29 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:30 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:30 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:30 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:30 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:31 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:31 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:31 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:31 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:32 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:32 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 20:29:32 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 20:29:32 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 20:29:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:49:48 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 21:49:48 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:53:48 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 21:53:48 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:12 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:16:12 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:59 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 15
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:16:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:18:00 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:18:00 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:20:21 UTC] PHP Notice:   in /home/michella/public_html/config.php on line 8
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/config.php on line 10
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:20:21 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 22:22:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:23:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:23:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:23:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:25:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:26:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:26:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/michella/public_html/config.php:6
+Stack trace:
+#0 /home/michella/public_html/validacao.php(10): include()
+#1 {main}
+  thrown in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:27:51 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:27:51 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:27:51 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:27:51 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:28:54 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:28:54 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:28:54 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:28:54 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:30:33 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:30:33 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:30:33 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:30:33 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:35:11 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:35:11 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:35:11 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:35:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:35:14 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:35:14 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:35:39 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'michella_michella'@'localhost' (using password: YES) in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:35:39 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:35:39 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:36:33 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:36:33 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:36:34 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:36:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:37:04 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:37:04 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:37:04 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:39:20 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:39:20 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:39:20 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:47:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'michella_michella'@'localhost' to database 'michella_michella' in /home/michella/public_html/config.php on line 6
+[04-Feb-2019 22:47:05 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 22:47:05 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:09:51 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:09:51 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:13 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:13 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:33 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:33 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:34 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:35 UTC] PHP Notice:  Undefined variable: con in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:10:35 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, null given in /home/michella/public_html/config.php on line 7
+[04-Feb-2019 23:13:55 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 14
+[04-Feb-2019 23:13:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[04-Feb-2019 23:13:55 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/michella/public_html/validacao.php on line 21
+[26-Mar-2019 10:33:47 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/michella/public_html/manutencao.php on line 9
+[18-Apr-2019 12:32:46 UTC] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 10
+[18-Apr-2019 12:32:46 UTC] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 11
+[13-May-2019 13:04:09 America/Sao_Paulo] PHP Notice:  Undefined index: usuario in /home/michella/public_html/validacao.php on line 10
+[13-May-2019 13:04:09 America/Sao_Paulo] PHP Notice:  Undefined index: senha in /home/michella/public_html/validacao.php on line 11
