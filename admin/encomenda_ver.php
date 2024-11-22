@@ -32,10 +32,7 @@ $usuarioid = $_SESSION['UsuarioID'];
 $idviagem = $_GET['idviagem'];
 
 // Consulta para `viagem_encomenda`
-$sql_viagem_encomenda = "SELECT ve.idencomenda, ve.idviagem, ve.etiqueta, ve.descricao, ve.remetente, ve.destinatario, ve.descricao, 
-                                ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ve.idsituacao, 
-                                ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ve.tipo, ve.qtd, 
-                                ve.valdeclarado, ce.idsituacao 
+$sql_viagem_encomenda = "SELECT select ve.idencomenda, ve.idviagem, ve.etiqueta, ve.descricao, ve.remetente, ve.destinatario,ve.descricao, ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ce.idsituacao, ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ve.idencomenda, ve.tipo, ve.qtd, ve.valdeclarado, ve.etiqueta 
                          FROM viagem_encomenda ve
                          INNER JOIN viagem v ON v.idviagem = ve.idviagem
                          INNER JOIN situacao_caixa sc ON sc.idsituacao = ve.idsituacao
@@ -793,9 +790,7 @@ include "../rodape.php";
                                                     <div class="form-group">
                                                         <label for="idsituacao">Pagamento</label>
                                                         <select class="form-control" name="idsituacao" id="idsituacao" readonly>
-                                                        <option value="<?php echo $aqui5['idsituacao'] ?>" ><?php echo $aqui4['situacao'] ?></option>
-                                                            <option value="2">Pago</option>
-                                                            <option value="1">Pendente</option>
+                                                        <option value="<?php echo $aqui5['idsituacao'] ?>" ><?php echo $aqui5['situacao'] ?></option>
                                                       </select> 
                                                     </div>
                                                 </div>

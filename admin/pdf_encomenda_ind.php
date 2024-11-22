@@ -14,9 +14,10 @@ $data_extenso = strftime('%d de %B de %Y', strtotime('today'));
 // Conecte-se ao banco de dados e obtenha os dados necessários
 include "../config.php";
 $idviagem = $_GET['idviagem'];
+$idencomenda = $_GET['idencomenda'];
 
 // Consultas ao banco
-$dados2_query = "SELECT ve.idencomenda, ve.idviagem, ve.etiqueta, ve.remetente, ve.destinatario, ve.descricao, ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ve.idsituacao, ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ce.id as idmovimento, c1.nome as corigemm, e1.uf as uforigem, c2.nome as cdestinoo, e2.uf as ufdestino, ve.tipo as tipoo, ve.qtd as qtde, ve.valdeclarado, ve.etiqueta
+$dados2_query = "SELECT ve.idencomenda, ve.idviagem, ve.etiqueta, ve.remetente, ve.destinatario, ve.descricao, ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ce.idsituacao, ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ce.id as idmovimento, c1.nome as corigemm, e1.uf as uforigem, c2.nome as cdestinoo, e2.uf as ufdestino, ve.tipo as tipoo, ve.qtd as qtde, ve.valdeclarado, ve.etiqueta
                  FROM viagem_encomenda ve
                  INNER JOIN viagem v ON v.idviagem = ve.idviagem
                  INNER JOIN situacao_caixa sc ON sc.idsituacao = ve.idsituacao
@@ -26,7 +27,7 @@ $dados2_query = "SELECT ve.idencomenda, ve.idviagem, ve.etiqueta, ve.remetente, 
                  INNER JOIN cidades c2 ON c2.id = r.cdestino
                  INNER JOIN estados e1 ON e1.id = r.uforigem
                  INNER JOIN estados e2 ON e2.id = r.ufdestino
-                 WHERE v.idviagem = $idviagem AND sc.idsituacao <> 3 and v.idcontrato = $contrato_id
+                 WHERE v.idviagem = $idviagem AND sc.idsituacao <> 3 and ve.idencomenda = $idencomenda and v.idcontrato = $contrato_id
                  ORDER BY ve.idencomenda";
 
 $dados2 = mysqli_query($con, $dados2_query);
