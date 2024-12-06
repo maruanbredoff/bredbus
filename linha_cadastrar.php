@@ -169,7 +169,7 @@ if($_POST){
     $resp_cadastro = mysqli_real_escape_string($con,$_POST['resp_cadastro']); 
     $obs = mysqli_real_escape_string($con,$_POST['obs']); 
     //Insere na tabela pagamentos
-          $cad_rota = mysqli_query($con,"INSERT INTO rota (corigem,cdestino,obs,resp_cadastro,uforigem,ufdestino,idcontrato) values('$cidadeorigem','$cidadedestino','$obs','$resp_cadastro','$uforigem','$ufdestino','$idcontrato') ") or die(mysqli_error($con)); 
+          $cad_rota = mysqli_query($con,"INSERT INTO rota (corigem,cdestino,obs,resp_cadastro,uforigem,ufdestino) values('$cidadeorigem','$cidadedestino','$obs','$resp_cadastro','$uforigem','$ufdestino') ") or die(mysqli_error($con)); 
 
           if(mysqli_affected_rows($con) == 1){ ?>
              <div class="alert alert-success"> 
@@ -229,9 +229,7 @@ unset($_SESSION['msg']);
                                                     <td><?php echo $linha['obs']?></td>
                                                     <td width="166">
                                                  <a href="" class="btn btn-info btn-circle" role="button" data-toggle="modal" data-target="#editar_rota<?php echo $linha['idrota']?>"><i class="fa fa-edit"></i></a>
-                                                 <?php if($linhausuario["nivel"]>=9){ ?> 
-                                                    <a class="btn btn-danger btn-circle" onclick="return confirm('Deseja realmente excluir essa linha/rota?!')" href="linha_deletar.php?idrota=<?php echo $linha['idrota'] ?>" role="button"><i class="fa fa-trash-o"></i> </a> <?php } ?>
-
+                                                    <a href="" class="btn btn-danger btn-circle" role="button" data-toggle="modal" data-target="#financeiro_cancelar<?php echo $linha['idrota']?>"><i class="fa fa-trash"></i></a>
 
                                                     </td>
                                                 </tr>

@@ -92,7 +92,7 @@ if($_POST){
     $obs = mysqli_real_escape_string($con,$_POST['obs']); 
     $resp_cadastro = mysqli_real_escape_string($con,$_POST['resp_cadastro']); 
     //Insere na tabela pagamentos
-          $cad_rota = mysqli_query($con,"INSERT INTO motorista(idmotorista, nome,documento,tel,obs,resp_cadastro, idcontrato) values('$nome','$documento','$tel','$obs','$resp_cadastro','$idcontrato') ") or die(mysqli_error($con)); 
+          $cad_rota = mysqli_query($con,"INSERT INTO motorista(nome,documento,tel,obs,resp_cadastro, idcontrato) values('$nome','$documento','$tel','$obs','$resp_cadastro','$idcontrato') ") or die(mysqli_error($con)); 
 
           if(mysqli_affected_rows($con) == 1){ ?>
              <div class="alert alert-success"> 

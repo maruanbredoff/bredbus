@@ -1,79 +1,97 @@
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-#menu{  
-    border:0px solid blue;
-    width:500px;
-    height:auto;
-    float: left;
-    margin: 70px 0 0 200px;
-}
-
-#layout_onibus{
-    position: relative;
-    border: 0px solid #d8cdcd;
-    width: 265px;
-    height: 700px;
-    background-image: url(../images/img-onibus.png);
-    background-repeat: no-repeat;
+/* Contêiner do ônibus */
+#bus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-}
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-.poltrona_esquerda{
-    position: absolute;
-    border: 0px solid red;
-    padding: 0 0 0 4px;
-    margin: 134px 0 0 35px;
-    width: 180px;
-    height: 350px;
-    text-align: center;
-    padding-top: 8px;
+    position: relative;
 }
 
-#layout_onibus td{
+/* Layout vertical */
+#bus-container.vertical {
+    background-image: url('../images/img-onibus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+
+/* Layout horizontal */
+#bus-container.horizontal {
+    background-image: url('../images/img-onibus2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    padding-right: 110px;
+}
+
+/* Layout horizontal */
+#seat-map.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.row-container.horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Mapa de assentos */
+#seat-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+/* Layout vertical */
+.row-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+/* Poltronas */
+.seat {
+    background-color: #90ee90;
+    border-radius: 6px;
     text-align: center;
-    height: 34px; 
-    width: 36px; 
-    border:0px solid blue; 
-    margin: 0;
-    padding: 0;
-    outline: 0;  
-    font-size: 11px;
+    line-height: 30px;
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
     font-weight: bold;
-    color: #fff;
-    text-indent: 2px;
-    vertical-align: baseline;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-#legenda{
-    margin: 0 auto; 
-    display: block;
+
+.seat:hover {
+    transform: scale(1.1);
 }
-.red{
-    background-color:red;
-    width: 20px; 
-    height: 20px;     
-    display: block;
+
+/* Poltronas ocupadas */
+.seat.occupied {
+    background-color: #f08080;
+    cursor: not-allowed;
 }
-.verde{
-    background-color:green;
-    width: 20px; 
-    height: 20px;     
-    display: block;
-}
-.livre{
-    background: url("../images/poltrona-livre.png") top center no-repeat;
-}
-.ocupada{ 
-    background: url("../images/poltrona-ocupada.png") top center no-repeat;
-}
-.reservada{ 
-    background: url("../images/poltrona-reservada.png") top center no-repeat;
-}
-#header{
-    border: 1px solid blue;
+
+/* Espaço vazio */
+.aisle {
+    width: 35px;
+    height: 35px;
 }

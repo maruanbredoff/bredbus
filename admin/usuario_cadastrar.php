@@ -29,7 +29,7 @@ $idcontrato = $_SESSION['ContratoID'];
 $query = sprintf("select u.id_usuario,u.u_nome,u.senha,u.nivel,u.usuario,u.ativo,u.data_cadastro,u.altera_senha,u.resp_cadastro,n.u_nivel
 from usuario u
 inner join usuario_nivel n on n.idnivel = u.nivel
-where u.id_usuario > 1"); 
+where u.id_usuario > 1 and idcontrato = $idcontrato"); 
 
 // executa a query 
 $dados = mysqli_query($con,$query) or die(mysqli_error($con)); 

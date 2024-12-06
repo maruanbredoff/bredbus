@@ -25,6 +25,13 @@ if (!isset($_SESSION['UsuarioID']) OR ($_SESSION['UsuarioNivel'] < $nivel_necess
 include "../config.php";
 
 ?>
+    <style>
+        .error-message2 {
+            color: red;
+            display: none;
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body class="fix-header card-no-border">
@@ -190,14 +197,11 @@ unset($_SESSION['msg']);
 <?php $idviagem = $_GET['idviagem']; ?>
         <!-- Elemento escondido para armazenar o ID da viagem -->
     <input type="hidden" id="viagem-id" value="<?php echo $idviagem ?>">
-    <div id="layout_onibus">
-        <table class="poltrona_esquerda" cellspacing="2" cellpadding="2">
-            <tbody id="seat-map">
-                <!-- Poltronas serão geradas dinamicamente aqui -->
-            </tbody>
-        </table>
-    </div>
-<!-- FIM LAYUT ONIBUS -->
+    <div id="bus-container" class="horizontal"> <!-- Começa como vertical -->
+    <div id="seat-map"></div>
+</div>
+    <!-- FIM LAYOUT ONIBUS -->
+<br>
 
                             <div class="row">
                                    <div class="col-md-5">
@@ -527,7 +531,7 @@ unset($_SESSION['msg']);
         </div>
     </div>
 
-                                <div class="modal fade bs-example-modal-lg" tabindex="-1" id="cadastrarcliente" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" id="cadastrarcliente" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -559,7 +563,8 @@ unset($_SESSION['msg']);
                                     </div>
                                     <div class="form-group m-b-40 col-md-5">
                                         <label for="documento">Documento</label>
-                                        <input type="text" class="form-control" id="documento" name="documento" placeholder="Documento" required>
+                                        <input type="text" class="form-control" name="documento" id="documento2" required>
+                                        <div class="error-message2" id="error-message2">Apenas números são permitidos.</div>
                                         <span class="bar"></span>
                                     </div>
                                     <div class="form-group m-b-40 col-md-3">
@@ -594,6 +599,7 @@ unset($_SESSION['msg']);
                                         </div>
                                     </div>
                                 </div> 
+
 
                     <?php foreach($dados2 as $aqui2){ ?>
                                 <div class="modal fade bs-example-modal" tabindex="-1" id="passagem_cancelar<?php echo $aqui2['idpassagem']?>" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
@@ -641,7 +647,7 @@ unset($_SESSION['msg']);
                                                     <div class="form-group">
                                                      <label for="idembarque">Embarque</label>
                                                   <select class="form-control" name="idembarque" id="idembarque" required>
-                                                        <option value="<?php echo $aqui3['idembarque'] ?>"><?php echo $aqui3['ponto_embarque'] ?>"</option>
+                                                        <option value="<?php echo $aqui3['idembarque'] ?>"><?php echo $aqui3['ponto_embarque'] ?></option>
                                                         <?php 
                                                         $q = mysqli_query($con, "SELECT pe.idembarque, pe.nome 
                                                                                  FROM pontos_embarque pe 
@@ -890,127 +896,242 @@ unset($_SESSION['msg']);
     });
 </script>
 
-    <script>
-            var qtdpoltrona = "<?php echo $buslugares; ?>";
-        const idviagem = new URLSearchParams(window.location.search).get('idviagem');
-        const totalSeats = qtdpoltrona; // Altere este valor conforme necessário
+<script>
+        document.getElementById('documento2').addEventListener('input', function (e) {
+            var value = this.value;
 
-        function createSeatElement(poltrona) {
-            const td = document.createElement('td');
-            td.id = `seat-${poltrona}`;
-            td.className = 'livre';
-            td.textContent = poltrona;
-            td.addEventListener('click', () => {
-                if (td.classList.contains('livre')) {
-                    $('#poltrona').val(poltrona);
-                    $('#bookingModal').modal('show');
-                }
-            });
-            return td;
-        }
+            // Remove todos os caracteres que não são números
+            this.value = value.replace(/\D/g, '');
 
-        function generateSeats(totalSeats) {
-            const seatMap = document.getElementById('seat-map');
-            let row, seatCount = 1;
-
-            for (let i = 1; i <= totalSeats; i += 4) {
-                row = document.createElement('tr');
-
-                // Poltronas da esquerda
-                row.appendChild(createSeatElement(seatCount++));
-                row.appendChild(createSeatElement(seatCount++));
-
-                // Corredor
-                const corridor = document.createElement('td');
-                corridor.innerHTML = '&nbsp;';
-                row.appendChild(corridor);
-
-            // Poltronas da direita (ajustando a ordem para 4, 3)
-            if (seatCount + 1 <= totalSeats) row.appendChild(createSeatElement(seatCount + 1));
-            if (seatCount <= totalSeats) row.appendChild(createSeatElement(seatCount));
-            seatCount += 2;
-
-                seatMap.appendChild(row);
+            // Se o valor original continha caracteres não numéricos, exibe a mensagem de erro
+            if (value !== this.value) {
+                document.getElementById('error-message2').style.display = 'block';
+            } else {
+                document.getElementById('error-message2').style.display = 'none';
             }
+        });
+    </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const ViagemID = <?php echo $idviagem; ?>;
+    // Função para buscar clientes
+    async function buscarClientes(termo) {
+        if (termo.trim().length < 3) {
+            alert('Por favor, insira pelo menos 3 caracteres para realizar a busca.');
+            return;
         }
 
-        async function atualizarPoltronasOcupadas() {
-            try {
-                const response = await fetch(`get_seat_status.php?idviagem=${idviagem}`);
-                const data = await response.json();
+        try {
+            const response = await fetch(`buscar_clientes.php?termo=${encodeURIComponent(termo)}`);
+            const data = await response.json();
 
-                data.occupiedSeats.forEach(poltrona => {
-                    const seatElement = document.getElementById(`seat-${poltrona}`);
-                    if (seatElement) {
-                        seatElement.classList.remove('livre');
-                        seatElement.classList.add('ocupada');
-                    }
+            const tbody = document.querySelector('#customerTable tbody');
+            tbody.innerHTML = ''; // Limpa os resultados anteriores
+
+            if (data.clientes.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4">Nenhum cliente encontrado.</td></tr>';
+                return;
+            }
+
+            data.clientes.forEach(cliente => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>
+                        <button type="button" class="btn btn-primary selecionar-cliente" data-cliente='${JSON.stringify(cliente)}'>Ok</button>
+                    </td>
+                    <td>${cliente.nome}</td>
+                    <td>${cliente.documento}</td>
+                    <td>${cliente.org}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            // Adiciona evento de clique aos botões
+            document.querySelectorAll('.selecionar-cliente').forEach(button => {
+                button.addEventListener('click', function () {
+                    const cliente = JSON.parse(this.getAttribute('data-cliente'));
+                    document.querySelector('#idcliente').value = cliente.idcliente;
+                    document.querySelector('#nome').value = cliente.nome;
+                    document.querySelector('#documento').value = cliente.documento;
+                    document.querySelector('#org').value = cliente.org;
+                    document.querySelector('#mae').value = cliente.mae;
+                    document.querySelector('#sexo').value = cliente.sexo;
+                    document.querySelector('#celular').value = cliente.celular;
+                    document.querySelector('#nascimento').value = cliente.nascimento;
+                    $('#customerModal').modal('hide');
                 });
-            } catch (error) {
-                console.error('Erro ao buscar o status das poltronas:', error);
+            });
+        } catch (error) {
+            console.error('Erro ao buscar clientes:', error);
+        }
+    }
+    async function fetchSeatStatus() {
+        try {
+            const response = await fetch(`get_seat_status.php?idviagem=${ViagemID}`);
+            const data = await response.json();
+
+            if (data.error) {
+                console.error(data.error);
+                return;
             }
+
+            const occupiedSeats = data.occupiedSeats.map(Number) || [];
+            const totalSeats = <?php echo $buslugares; ?>;
+
+            ajustarLayout(totalSeats, occupiedSeats);
+        } catch (error) {
+            console.error('Erro ao buscar o status das poltronas:', error);
+        }
+    }
+
+    function ajustarLayout(totalSeats, occupiedSeats) {
+        const busContainer = document.getElementById('bus-container');
+        const seatMap = document.getElementById('seat-map');
+
+        if (window.innerWidth >= 768) {
+            busContainer.classList.remove('vertical');
+            busContainer.classList.add('horizontal');
+            seatMap.classList.add('horizontal');
+            generateHorizontalSeatMap(totalSeats, occupiedSeats);
+        } else {
+            busContainer.classList.remove('horizontal');
+            busContainer.classList.add('vertical');
+            seatMap.classList.remove('horizontal');
+            generateVerticalSeatMap(totalSeats, occupiedSeats);
+        }
+    }
+
+    function generateHorizontalSeatMap(totalSeats, occupiedSeats) {
+        const seatMap = document.getElementById('seat-map');
+        seatMap.innerHTML = '';
+
+        const leftWindowSeats = [];
+        const leftAisleSeats = [];
+        const rightAisleSeats = [];
+        const rightWindowSeats = [];
+
+        for (let i = totalSeats; i >= 1; i--) {
+            if ((i - 1) % 4 === 0) leftWindowSeats.push(i);
+            else if ((i - 2) % 4 === 0) leftAisleSeats.push(i);
+            else if ((i - 3) % 4 === 0) rightWindowSeats.push(i);
+            else if (i % 4 === 0) rightAisleSeats.push(i);
         }
 
-async function buscarClientes(termo) {
-    // Verifica se o termo tem pelo menos 3 caracteres
-    if (termo.trim().length < 3) {
-        alert('Por favor, insira pelo menos 3 caracteres para realizar a busca.');
-        return;
+        // Adicionar poltronas vazias para completar o layout
+        while (leftWindowSeats.length > leftAisleSeats.length) {
+            leftAisleSeats.unshift(null);
+        }
+        while (rightWindowSeats.length < leftWindowSeats.length) {
+            rightWindowSeats.unshift(null);
+        }
+        while (rightAisleSeats.length < leftWindowSeats.length) {
+            rightAisleSeats.unshift(null);
+        }
+
+        const maxRows = Math.max(
+            leftWindowSeats.length,
+            leftAisleSeats.length,
+            rightAisleSeats.length,
+            rightWindowSeats.length
+        );
+
+        for (let i = 0; i < maxRows; i++) {
+            const rowContainer = document.createElement('div');
+            rowContainer.className = 'row-container horizontal';
+
+            rowContainer.appendChild(
+                leftWindowSeats[i] ? createSeat(leftWindowSeats[i], occupiedSeats) : createEmptySpace()
+            );
+            rowContainer.appendChild(
+                leftAisleSeats[i] ? createSeat(leftAisleSeats[i], occupiedSeats) : createEmptySpace()
+            );
+            rowContainer.appendChild(createEmptySpace());
+            rowContainer.appendChild(
+                rightAisleSeats[i] ? createSeat(rightAisleSeats[i], occupiedSeats) : createEmptySpace()
+            );
+            rowContainer.appendChild(
+                rightWindowSeats[i] ? createSeat(rightWindowSeats[i], occupiedSeats) : createEmptySpace()
+            );
+
+            seatMap.appendChild(rowContainer);
+        }
     }
 
-    try {
-        const response = await fetch(`buscar_clientes.php?termo=${encodeURIComponent(termo)}`);
-        const data = await response.json();
+    function generateVerticalSeatMap(totalSeats, occupiedSeats) {
+        const seatMap = document.getElementById('seat-map');
+        seatMap.innerHTML = '';
 
-        const tbody = document.querySelector('#customerTable tbody');
-        tbody.innerHTML = '';
+        const rows = Math.ceil(totalSeats / 4);
+        for (let row = 1; row <= rows; row++) {
+            const rowContainer = document.createElement('div');
+            rowContainer.className = 'row-container';
 
-        data.clientes.forEach(cliente => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td><button type="button" class="btn btn-primary selecionar-cliente" data-cliente='${JSON.stringify(cliente)}'>Ok</button></td>
-                <td>${cliente.nome}</td>
-                <td>${cliente.documento}</td>
-                <td>${cliente.org}</td>
-            `;
-            tbody.appendChild(tr);
-        });
+            const seatNumbers = {
+                upperWindow: (row - 1) * 4 + 1,
+                upperAisle: (row - 1) * 4 + 2,
+                lowerWindow: (row - 1) * 4 + 3,
+                lowerAisle: (row - 1) * 4 + 4,
+            };
 
-        // Adiciona evento de clique para os botões de selecionar cliente
-        document.querySelectorAll('.selecionar-cliente').forEach(button => {
-            button.addEventListener('click', function() {
-                const cliente = JSON.parse(this.getAttribute('data-cliente'));
-                $('#idcliente').val(cliente.idcliente);
-                $('#nome').val(cliente.nome);
-                $('#documento').val(cliente.documento);
-                $('#org').val(cliente.org);
-                $('#mae').val(cliente.mae);
-                $('#sexo').val(cliente.sexo);
-                $('#celular').val(cliente.celular);
-                $('#nascimento').val(cliente.nascimento);
-                $('#customerModal').modal('hide');
-            });
-        });
-    } catch (error) {
-        console.error('Erro ao buscar clientes:', error);
+            rowContainer.appendChild(
+                seatNumbers.upperWindow <= totalSeats
+                    ? createSeat(seatNumbers.upperWindow, occupiedSeats)
+                    : createEmptySpace()
+            );
+            rowContainer.appendChild(
+                seatNumbers.upperAisle <= totalSeats
+                    ? createSeat(seatNumbers.upperAisle, occupiedSeats)
+                    : createEmptySpace()
+            );
+            rowContainer.appendChild(createEmptySpace());
+            rowContainer.appendChild(
+                seatNumbers.lowerAisle <= totalSeats
+                    ? createSeat(seatNumbers.lowerAisle, occupiedSeats)
+                    : createEmptySpace()
+            );
+            rowContainer.appendChild(
+                seatNumbers.lowerWindow <= totalSeats
+                    ? createSeat(seatNumbers.lowerWindow, occupiedSeats)
+                    : createEmptySpace()
+            );
+
+            seatMap.appendChild(rowContainer);
+        }
     }
-}
 
+    function createSeat(seatNumber, occupiedSeats) {
+        const seat = document.createElement('div');
+        seat.className = occupiedSeats.includes(seatNumber) ? 'seat occupied' : 'seat';
+        seat.textContent = seatNumber;
 
-
-        document.addEventListener('DOMContentLoaded', () => {
-            generateSeats(totalSeats);
-            atualizarPoltronasOcupadas();
-
-            $('#searchCustomerBtn').on('click', function() {
-                $('#customerModal').modal('show');
+        if (!occupiedSeats.includes(seatNumber)) {
+            seat.addEventListener('click', () => {
+                document.getElementById('poltrona').value = seatNumber;
+                $('#bookingModal').modal('show');
             });
+        }
 
-            $('#searchBtn').on('click', function() {
-                const termo = $('#searchInput').val();
-                buscarClientes(termo);
-            });
-        });
+        return seat;
+    }
+
+    function createEmptySpace() {
+        const emptySpace = document.createElement('div');
+        emptySpace.className = 'aisle';
+        return emptySpace;
+    }
+    // Eventos do modal e botão de busca
+    document.querySelector('#searchCustomerBtn').addEventListener('click', () => {
+        $('#customerModal').modal('show');
+    });
+
+    document.querySelector('#searchBtn').addEventListener('click', () => {
+        const termo = document.querySelector('#searchInput').value;
+        buscarClientes(termo);
+    });
+    window.addEventListener('resize', () => fetchSeatStatus());
+    fetchSeatStatus();
+});
     </script>
 </body>
 </html>
