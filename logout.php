@@ -1,5 +1,5 @@
 <?php
-	session_start(); // Inicia a sessão
-	session_destroy(); // Destrói a sessão limpando todos os valores salvos
-	header("Location: /bredbus"); exit; // Redireciona o visitante
+	session_start(); // Inicia a sessï¿½o
+	session_destroy(); // Destrï¿½i a sessï¿½o limpando todos os valores salvos
+	header("Location: /sistema"); exit; // Redireciona o visitante
 ?>

@@ -134,7 +134,14 @@ $ocupadas = [];
 while ($row = $result_ocupadas->fetch_assoc()) {
     $ocupadas[] = $row['poltrona'];
 }
-   
+// Obter a data da viagem atual
+$sql_viagem_atual = "SELECT dataviagem FROM viagem WHERE idviagem = ? and idcontrato = ?";
+$stmt_viagem_atual = $con->prepare($sql_viagem_atual);
+$stmt_viagem_atual->bind_param("ii", $idviagem, $idcontrato);
+$stmt_viagem_atual->execute();
+$result_viagem_atual = $stmt_viagem_atual->get_result();
+$viagem_atual = $result_viagem_atual->fetch_assoc();
+$data_viagem_atual = $viagem_atual['dataviagem'];
 ?>
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
@@ -245,10 +252,17 @@ unset($_SESSION['msg']);
                                                     <td><?php echo $linha2['ponto_embarque']?></td>
                                                     <td><?php echo $linha2['hembarque']?></td>
                                                     <td><?php echo $linha2['desembarque']?></td>
-                                                    <td width="160"><a href="" class="btn btn-danger btn-circle" role="button" data-toggle="modal" data-target="#passagem_cancelar<?php echo $linha2['idpassagem']?>"><i class="fa fa-trash"></i></a>
-                                                    <a href="" class="btn btn-info btn-circle" role="button" data-toggle="modal" data-target="#passagem_editar<?php echo $linha2['idpassagem']?>"><i class="fa fa-edit"></i></a> 
+                                                    <?php if (strtotime($data_viagem_atual) < strtotime(date('Y-m-d'))) { ?>
+                                                    <td>
                                                     <a href="pdf_comprovante2.php?idpassagem=<?php echo $linha2['idpassagem']?>&idviagem=<?php echo $linha2['idviagem'] ?>" target="_blank" class="btn btn-success btn-circle" role="button"><i class="mdi mdi-receipt"></i> </a>
                                                     </td>
+                                                    <?php } else { ?>
+                                                    <td width="200">
+                                                        <a href="" class="btn btn-danger btn-circle" role="button" data-toggle="modal" data-target="#passagem_cancelar<?php echo $linha2['idpassagem']?>"><i class="fa fa-trash"></i></a>
+                                                        <a href="" class="btn btn-info btn-circle" role="button" data-toggle="modal" data-target="#passagem_editar<?php echo $linha2['idpassagem']?>"><i class="fa fa-edit"></i></a> 
+                                                        <a href="pdf_comprovante2.php?idpassagem=<?php echo $linha2['idpassagem']?>&idviagem=<?php echo $linha2['idviagem'] ?>" target="_blank" class="btn btn-success btn-circle" role="button"><i class="mdi mdi-receipt"></i> </a>
+                                                        <a href="" class="btn btn-warning btn-circle" role="button" data-toggle="modal" data-target="#transferModal<?php echo $linha2['idpassagem']; ?>"><i class="mdi mdi-transfer"></i></a>  
+                                                    </td> <?php } ?>
                                                 </tr>
                                             <?php 
                                             // finaliza o loop que vai mostrar os dados 
@@ -259,6 +273,41 @@ unset($_SESSION['msg']);
                                             </tbody>
                                         </table>
                                     </div>
+ <!-- Modal de transferencia de passagem -->
+ <?php foreach($dados2 as $aqui5){ ?>
+<div class="modal fade" id="transferModal<?php echo $aqui5['idpassagem']; ?>" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Transferir Passageiro</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="formTransfer<?php echo $aqui5['idpassagem']; ?>" action="passagem_transferencia.php" method="post" onsubmit="return disableButton(this);">
+                    <input type="hidden" name="idpassagem" value="<?php echo $aqui5['idpassagem']; ?>">
+                    <div class="form-group">
+                        <label for="data_viagem">Selecione a Data:</label>
+                        <input type="date" class="form-control" name="data_viagem" id="data_viagem<?php echo $aqui5['idpassagem']; ?>" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nova_viagem">Selecione a Viagem:</label>
+                        <select class="form-control" name="nova_viagem" id="nova_viagem<?php echo $aqui5['idpassagem']; ?>" required>
+                            <!-- Opções carregadas dinamicamente -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nova_poltrona">Selecione a Poltrona:</label>
+                        <select class="form-control" name="nova_poltrona" id="nova_poltrona<?php echo $aqui5['idpassagem']; ?>" required>
+                            <!-- Opções carregadas dinamicamente -->
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Transferir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<?php } ?>
 
     <!-- Modal de adicionar obs a viagem -->
     <div class="modal fade" id="viagem_obs" tabindex="-1" role="dialog" aria-labelledby="viagem_obs" aria-hidden="true">
@@ -850,6 +899,63 @@ unset($_SESSION['msg']);
 
     });
     </script>
+	
+ <!-- Script para transferencia de passagens. Carrega o formulário de transferência de passagens -->
+ <script>
+$(document).on('change', '[id^=data_viagem]', function() {
+    var data_viagem = $(this).val();
+    var modal = $(this).closest('.modal');
+    var id_viagem = '<?php echo $idviagem; ?>'; // ID da viagem atual
+    var selectViagem = modal.find('[id^=nova_viagem]');
+    var selectPoltrona = modal.find('[id^=nova_poltrona]');
+
+    // Resetar os selects
+    selectViagem.html('<option value="">Carregando viagens...</option>');
+    selectPoltrona.html('<option value="">Selecione uma viagem primeiro</option>');
+
+    // Buscar viagens
+    $.ajax({
+        url: 'buscar_viagens.php',
+        type: 'GET',
+        data: { data_viagem: data_viagem, id_viagem: id_viagem },
+        success: function(response) {
+            selectViagem.html(response);
+
+            // Se houver apenas uma viagem, carregar automaticamente as poltronas
+            var firstOption = selectViagem.find('option').first();
+            if (firstOption.val() && firstOption.val() !== '') {
+                selectViagem.val(firstOption.val()).trigger('change');
+            }
+        },
+        error: function() {
+            selectViagem.html('<option value="">Erro ao carregar viagens</option>');
+        }
+    });
+});
+
+$(document).on('change', '[id^=nova_viagem]', function() {
+    var nova_viagem = $(this).val();
+    var modal = $(this).closest('.modal');
+    var selectPoltrona = modal.find('[id^=nova_poltrona]');
+
+    // Resetar o select de poltronas
+    selectPoltrona.html('<option value="">Carregando poltronas...</option>');
+
+    // Buscar poltronas
+    $.ajax({
+        url: 'buscar_poltronas.php',
+        type: 'GET',
+        data: { nova_viagem: nova_viagem },
+        success: function(response) {
+            selectPoltrona.html(response);
+        },
+        error: function() {
+            selectPoltrona.html('<option value="">Erro ao carregar poltronas</option>');
+        }
+    });
+});
+</script>	
+	
 <script>
     $(document).ready(function() {
         // Função para buscar o horário de embarque

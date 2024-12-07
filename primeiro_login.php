@@ -92,7 +92,7 @@ if ($_POST)
             </div>
 <?php
 session_destroy();
-          echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=index.php'>";   
+          echo "<meta HTTP-EQUIV='refresh' CONTENT='2;URL=/sistema'>";   
          }
 }
 ?>
