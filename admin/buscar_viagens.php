@@ -20,9 +20,8 @@ if (!$viagem_atual) {
 $data_viagem_atual = $viagem_atual['dataviagem'];
 
 // Garantir que a data recebida é válida
-if (strtotime($data_viagem) < strtotime($data_viagem_atual)) {
-    $data_viagem_brasil = date('d/m/Y', strtotime($data_viagem_atual)); // Formatar a data no padrão brasileiro
-    echo "<option value=''>Selecione uma data igual ou posterior a {$data_viagem_brasil}</option>";
+if (strtotime($data_viagem) < strtotime(date('Y-m-d'))) {
+    echo "<option value=''>Selecione uma data igual ou posterior a " . date('d/m/Y') . "</option>";
     exit;
 }
 

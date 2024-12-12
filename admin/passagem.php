@@ -245,7 +245,7 @@ unset($_SESSION['msg']);
                                                 <tr>
                                                     <td><?php echo $linha2['poltrona']?></td>
                                                     <td>
-<a href="cliente_cadastro_ver.php?&idcliente=<?php echo $linha2['idcliente']?>"><?php echo $linha2['primeironome']." ".$linha2['segundonome']?></a></td>
+                                                    <a href="cliente_cadastro_ver.php?&idcliente=<?php echo $linha2['idcliente']?>"><?php echo $linha2['primeironome']." ".$linha2['segundonome']?></a></td>
                                                     <td><?php echo $linha2['documento']?></td>
                                                     <td><?php echo $linha2['org']?></td>
                                                     <td width="150"><?php echo $linha2['celular']?></td>
@@ -255,6 +255,7 @@ unset($_SESSION['msg']);
                                                     <?php if (strtotime($data_viagem_atual) < strtotime(date('Y-m-d'))) { ?>
                                                     <td>
                                                     <a href="pdf_comprovante2.php?idpassagem=<?php echo $linha2['idpassagem']?>&idviagem=<?php echo $linha2['idviagem'] ?>" target="_blank" class="btn btn-success btn-circle" role="button"><i class="mdi mdi-receipt"></i> </a>
+                                                    <a href="" class="btn btn-danger btn-circle" role="button" data-toggle="modal" data-target="#passagem_cancelar<?php echo $linha2['idpassagem']?>"><i class="fa fa-trash"></i></a>
                                                     </td>
                                                     <?php } else { ?>
                                                     <td width="200">
