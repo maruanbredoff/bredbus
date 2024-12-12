@@ -90,7 +90,7 @@ unset($_SESSION['msg']);
 $sql_dados2 = "SELECT v.idviagem, v.motorista1, v.motorista2, v.dataviagem, v.horaviagem, 
                       b.tipo, b.lugares, b.idbus, b.descricao, v.obs, 
                       c1.nome AS corigem, e1.uf AS uforigem, 
-                      c2.nome AS cdestino, e2.uf AS ufdestino
+                      c2.nome AS cdestino, e2.uf AS ufdestino, r.idrota
                FROM viagem v
                INNER JOIN rota r ON r.idrota = v.idrota
                INNER JOIN bus b ON b.idbus = v.idbus
@@ -142,7 +142,7 @@ if ($_POST) {
     $sql_dados = "SELECT v.idviagem, v.motorista1, v.motorista2, v.dataviagem, v.horaviagem, 
                          b.tipo, b.lugares, b.idbus, b.descricao, v.obs, 
                          c1.nome AS corigem, e1.uf AS uforigem, 
-                         c2.nome AS cdestino, e2.uf AS ufdestino
+                         c2.nome AS cdestino, e2.uf AS ufdestino, r.idrota
                   FROM viagem v
                   INNER JOIN rota r ON r.idrota = v.idrota
                   INNER JOIN bus b ON b.idbus = v.idbus
@@ -456,7 +456,9 @@ if ($_POST) {
                                     </div>
                                 </div> 
 
-                <?php foreach($dados as $aqui3){ ?> 
+                <?php foreach($dados as $aqui3){ 
+                    $rota = $aqui3['corigem']." - ".$aqui3['uforigem']." - ".$aqui3['cdestino']." - ".$aqui3['ufdestino'];
+                    ?> 
                                 <div class="modal fade bs-example-modal-lg" tabindex="-1" id="viagem_editar2<?php echo $aqui3['idviagem']?>" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -466,6 +468,47 @@ if ($_POST) {
                                             </div>
                                             <div class="modal-body">
                                                 <form action="viagem_editar.php" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="rota">Linha / Rota</label>
+                                                            <select class="custom-select form-control" name="idrota" id="idrota" required>
+                                                                <option value="<?php echo htmlspecialchars($aqui3['idrota']); ?>">
+                                                                    <?php echo htmlspecialchars($rota); ?>
+                                                                </option>
+                                                                <?php 
+                                                                // Prepara a consulta
+                                                                $stmt = $con->prepare("SELECT r.idrota, r.obs, c1.nome as corigem, e1.uf as uforigem, c2.nome as cdestino, e2.uf as ufdestino 
+                                                                                    FROM rota r
+                                                                                    INNER JOIN cidades c1 ON c1.id = r.corigem
+                                                                                    INNER JOIN cidades c2 ON c2.id = r.cdestino
+                                                                                    INNER JOIN estados e1 ON e1.id = r.uforigem
+                                                                                    INNER JOIN estados e2 ON e2.id = r.ufdestino
+                                                                                    where r.idcontrato = $idcontrato");
+
+                                                                // Executa a consulta
+                                                                $stmt->execute();
+
+                                                                // Vincula o resultado
+                                                                $result = $stmt->get_result();
+
+                                                                if ($result->num_rows > 0) {
+                                                                    // Preenche o campo com os resultados
+                                                                    while ($line = $result->fetch_assoc()) {
+                                                                        echo "<option value='" . htmlspecialchars($line['idrota']) . "'>"
+                                                                            . htmlspecialchars($line['corigem']) . " -> " . htmlspecialchars($line['cdestino']) . 
+                                                                            "</option>";
+                                                                    }
+                                                                } else {
+                                                                    // Caso não haja resultados
+                                                                    echo "<option value='none'>Nenhum resultado encontrado!</option>"; 
+                                                                }
+                                                                ?>  
+                                                            </select> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
@@ -543,26 +586,27 @@ if ($_POST) {
                                                             </select>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                     <label for="valor">Obs</label>
-                                                        <input type="text" class="form-control" id="obs" name="obs" <?php echo $aqui3['obs'] ?>>
-                                                        <input type="hidden" class="form-control" id="idviagem" name="idviagem" value="<?php echo $aqui3['idviagem'] ?>">
-                                                        <input type="hidden" class="form-control" id="editado_por" name="editado_por" value="<?php echo $_SESSION['UsuarioNome']?>">
-                                                    </div>
-                                                </div>
-                                            </div>
+													<div class="col-md-6">
+														<div class="form-group">
+														 <label for="valor">Obs</label>
+															<input type="text" class="form-control" id="obs" name="obs" <?php echo $aqui3['obs'] ?>>
+															<input type="hidden" class="form-control" id="idviagem" name="idviagem" value="<?php echo $aqui3['idviagem'] ?>">
+															<input type="hidden" class="form-control" id="editado_por" name="editado_por" value="<?php echo $_SESSION['UsuarioNome']?>">
+														</div>
+													</div>
+												</div>
                                                     <button type="submit" name="confirmar" id="confirmar" class="btn btn-info">Confirmar</button>
                                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
+                                
                          <?php  }  ?> 
 
-                <?php foreach($dados2 as $aqui4){ ?> 
+                <?php foreach($dados2 as $aqui4){ 
+                    $rota = $aqui4['corigem']." - ".$aqui4['uforigem']." - ".$aqui4['cdestino']." - ".$aqui4['ufdestino'];
+                    ?> 
                                 <div class="modal fade bs-example-modal-lg" tabindex="-1" id="viagem_editar<?php echo $aqui4['idviagem']?>" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
@@ -572,6 +616,46 @@ if ($_POST) {
                                             </div>
                                             <div class="modal-body">
                                                 <form action="viagem_editar.php" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label for="rota">Linha / Rota</label>
+                                                            <select class="custom-select form-control" name="idrota" id="idrota" required>
+                                                                <option value="<?php echo htmlspecialchars($aqui4['idrota']); ?>">
+                                                                    <?php echo htmlspecialchars($rota); ?>
+                                                                </option>
+                                                                <?php 
+                                                                // Prepara a consulta
+                                                                $stmt = $con->prepare("SELECT r.idrota, r.obs, c1.nome as corigem, e1.uf as uforigem, c2.nome as cdestino, e2.uf as ufdestino 
+                                                                                    FROM rota r
+                                                                                    INNER JOIN cidades c1 ON c1.id = r.corigem
+                                                                                    INNER JOIN cidades c2 ON c2.id = r.cdestino
+                                                                                    INNER JOIN estados e1 ON e1.id = r.uforigem
+                                                                                    INNER JOIN estados e2 ON e2.id = r.ufdestino
+                                                                                    where r.idcontrato = $idcontrato");
+
+                                                                // Executa a consulta
+                                                                $stmt->execute();
+
+                                                                // Vincula o resultado
+                                                                $result = $stmt->get_result();
+
+                                                                if ($result->num_rows > 0) {
+                                                                    // Preenche o campo com os resultados
+                                                                    while ($line = $result->fetch_assoc()) {
+                                                                        echo "<option value='" . htmlspecialchars($line['idrota']) . "'>"
+                                                                            . htmlspecialchars($line['corigem']) . " -> " . htmlspecialchars($line['cdestino']) . 
+                                                                            "</option>";
+                                                                    }
+                                                                } else {
+                                                                    // Caso não haja resultados
+                                                                    echo "<option value='none'>Nenhum resultado encontrado!</option>"; 
+                                                                }
+                                                                ?>  
+                                                            </select> 
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">

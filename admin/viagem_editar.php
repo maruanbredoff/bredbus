@@ -29,12 +29,13 @@ include "../config.php";
 include "../funcoes.php";
 $idviagem = mysqli_real_escape_string($con,$_POST['idviagem']);
 $idbus = mysqli_real_escape_string($con,$_POST['idbus']);
+$idrota = mysqli_real_escape_string($con,$_POST['idrota']);
 $motorista1 = mysqli_real_escape_string($con,$_POST['motorista1']); 
 $motorista2 = mysqli_real_escape_string($con,$_POST['motorista2']); 
 $obs = mysqli_real_escape_string($con,$_POST['obs']); 
 $editado_por = mysqli_real_escape_string($con,$_POST['editado_por']);
      
-          $cad = mysqli_query ($con,"UPDATE viagem set idbus = '$idbus', motorista1 = '$motorista1', motorista2 = '$motorista2', obs = '$obs', editado_por = '$editado_por' where idviagem=$idviagem")  or die(mysqli_error($con));
+          $cad = mysqli_query ($con,"UPDATE viagem set idbus = '$idbus', motorista1 = '$motorista1', motorista2 = '$motorista2', obs = '$obs', idrota = '$idrota', editado_por = '$editado_por' where idviagem=$idviagem")  or die(mysqli_error($con));
 
 if($cad){ 
 
