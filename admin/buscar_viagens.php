@@ -3,9 +3,10 @@ include "../config.php";
 
 $data_viagem = $_GET['data_viagem'];
 $id_viagem_atual = $_GET['id_viagem'];
+$idcontrato = $_SESSION['ContratoID'];
 
 // Obter a data da viagem atual
-$sql_viagem_atual = "SELECT dataviagem FROM viagem WHERE idviagem = ?";
+$sql_viagem_atual = "SELECT dataviagem FROM viagem WHERE idviagem = ? and idcontrato = $idcontrato";
 $stmt_viagem_atual = $con->prepare($sql_viagem_atual);
 $stmt_viagem_atual->bind_param("i", $id_viagem_atual);
 $stmt_viagem_atual->execute();

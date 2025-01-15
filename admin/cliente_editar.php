@@ -37,7 +37,7 @@ if ($_POST)
 
 if($cad) {
 include "../funcoes.php";
-criaLog("$con,cliente Editado", "Cliente numero $idcliente");
+//criaLog("$con,cliente Editado", "Cliente numero $idcliente");
                 $_SESSION['msg'] = "<div class='alert alert-success' role='alert'>Cliente Editado com Sucesso<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
                 //header("Location: cliente_listar.php");
                    echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cliente_cadastro_ver.php?idcliente=$idcliente'>";  

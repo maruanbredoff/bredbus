@@ -32,7 +32,7 @@ $usuarioid = $_SESSION['UsuarioID'];
 $idviagem = $_GET['idviagem'];
 
 // Consulta para `viagem_encomenda`
-$sql_viagem_encomenda = "SELECT select ve.idencomenda, ve.idviagem, ve.etiqueta, ve.descricao, ve.remetente, ve.destinatario,ve.descricao, ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ce.idsituacao, ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ve.idencomenda, ve.tipo, ve.qtd, ve.valdeclarado, ve.etiqueta 
+$sql_viagem_encomenda = "SELECT ve.idencomenda, ve.idviagem, ve.etiqueta, ve.descricao, ve.remetente, ve.destinatario,ve.descricao, ve.localhorigem, ve.localdestino, ve.telremetente, ve.teldestinatario, ve.valor, ce.idsituacao, ve.obs, ve.docremetente, ve.docdestinatario, sc.situacao, ce.valorpg, ve.idencomenda, ve.tipo, ve.qtd, ve.valdeclarado, ve.etiqueta 
                          FROM viagem_encomenda ve
                          INNER JOIN viagem v ON v.idviagem = ve.idviagem
                          INNER JOIN situacao_caixa sc ON sc.idsituacao = ve.idsituacao
@@ -194,7 +194,7 @@ $cad_contas_encomenda = mysqli_query($con,"INSERT INTO contas_encomendas (idenco
 }
 else  {
          if(mysqli_affected_rows($con) == 1){ 
-criaLog($con,"Encomenda Cadastrada", "Encomenda numero $idencomendaprox");
+//criaLog($con,"Encomenda Cadastrada", "Encomenda numero $idencomendaprox", $idcontrato);
             ?>
              <div class="alert alert-success"> 
                  Cadastro Efetuado com Êxito!

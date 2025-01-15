@@ -80,7 +80,6 @@ unset($_SESSION['msg']);
     $hoje = date('Y/m/d');                  
 $idcontrato = $_SESSION['ContratoID'];
 $usuarioid = $_SESSION['UsuarioID'];
-
 // Definindo o valor da data de hoje
 $hoje = date("Y-m-d");
 
@@ -107,7 +106,6 @@ $linha2 = $dados2->fetch_assoc();
 $total2 = $dados2->num_rows;
 
 $idviagem2 = $linha2['idviagem'];
-
 // Consulta de nível do usuário
 $sql_usuario = "SELECT nivel FROM usuario WHERE id_usuario = ?";
 $stmt_usuario = $con->prepare($sql_usuario);
@@ -121,7 +119,6 @@ $stmt_usuario->close();
 
 if ($_POST) {
     $dataviagem = $_POST['dataviagem'];
-
     // Consulta de viagens para uma data específica
     $sql_viagens_data = "
         SELECT v.idviagem, v.motorista1, v.motorista2, v.dataviagem, v.horaviagem, 
@@ -140,19 +137,21 @@ if ($_POST) {
     $stmt_viagens_data = $con->prepare($sql_viagens_data);
     $stmt_viagens_data->bind_param("si", $dataviagem, $idcontrato);
     $stmt_viagens_data->execute();
-    $dados = []; // Inicializa como array vazio para evitar erros
-    //$dados = $stmt_viagens_data->get_result();
-    $linha = $dados->fetch_assoc();
-    $total = $dados->num_rows;
+    $result = $stmt_viagens_data->get_result();
+    $linha = $result->fetch_assoc();
+    $total = $result->num_rows;
 
     $idviagem3 = $linha['idviagem'];
-
 // Se houver resultados, atribua-os a $dados
 if ($result && $result->num_rows > 0) {
-    $dados = $stmt_viagens_data->fetch_all(MYSQLI_ASSOC); // Preenche $dados com resultados como array associativo
+    $dados = [];
+    while ($row = $result->fetch_assoc()) {
+        $dados[] = $row;
+    }
+} else {
+    $dados = []; // Inicializa como array vazio se não houver resultados
 }    
 ?>
-
                                         <table id="" class="display table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
@@ -187,8 +186,7 @@ if ($result && $result->num_rows > 0) {
                                                 $linha_encomendas = $dadosencomendas->fetch_assoc();
 
                                                 $qtdencomenda = $linha_encomendas['qtdencomenda'];
-
-                                                // Fecha a consulta preparada
+// Fecha a consulta preparada
                                                 $stmt_encomendas->close();
                                             ?>
                                                 <tr>
@@ -206,7 +204,7 @@ if ($result && $result->num_rows > 0) {
                                                 </tr>
                                             <?php 
                                             // finaliza o loop que vai mostrar os dados 
-                                                    }while($linha = mysqli_fetch_assoc($dados)); 
+                                                    }while($linha = mysqli_fetch_assoc($result)); 
                                                     // fim do if 
                                                             } 
                                             ?> 
@@ -233,8 +231,7 @@ if ($result && $result->num_rows > 0) {
                                             // inicia o loop que vai mostrar todos os dados 
                                                 do { 
                                                 $idviagem2 = $linha2['idviagem'];
-
-                                                // Consulta para contar a quantidade de encomendas associadas à viagem e ao contrato
+// Consulta para contar a quantidade de encomendas associadas à viagem e ao contrato
                                                 $sql_encomendas2 = "
                                                     SELECT COUNT(*) as qtdencomenda2
                                                     FROM viagem_encomenda ve
@@ -250,8 +247,7 @@ if ($result && $result->num_rows > 0) {
                                                 $linha_encomendas2 = $dadosencomendas2->fetch_assoc();
 
                                                 $qtdencomenda2 = $linha_encomendas2['qtdencomenda2'];
-
-                                                // Fecha a consulta preparada
+// Fecha a consulta preparada
                                                 $stmt_encomendas2->close();
 
                                             ?>
@@ -602,7 +598,6 @@ if ($result && $result->num_rows > 0) {
 <?php 
 include "../rodape.php";
 ?>
-
     </div>
 
     <script>

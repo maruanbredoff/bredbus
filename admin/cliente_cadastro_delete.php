@@ -45,7 +45,7 @@ if(mysqli_affected_rows($con) == 1){
             }
           else{ ?>
                 <div class="alert alert-danger alert-rounded">
-                    <i class="ti-user"></i> Erro! Verifique se o Paciente não tem anamnese ou Tratamento Cadastrado.
+                    <i class="ti-user"></i> Erro! Verifique se o cliente nao tem passagem cadastrada.
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                 </div>
                 

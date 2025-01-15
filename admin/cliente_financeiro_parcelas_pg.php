@@ -64,7 +64,7 @@ $cad = mysqli_query($con,"update contas_receber set idsituacao = '2', data_pg = 
                 
 if($cad) {
 include "../funcoes.php";
-criaLog("Parcela Paga", "Pagamento de parcela numero $idparcelas");
+//criaLog("Parcela Paga", "Pagamento de parcela numero $idparcelas");
 		$_SESSION['msg'] = "<div class='alert alert-success' role='alert'>Pagamento Efetuado com Sucesso<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
 		//header("Location: cliente_financeiro_parcelas.php?idcliente=$idcliente");
                     echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=cliente_financeiro_parcelas.php?idcliente=$idcliente'>";  

@@ -65,7 +65,7 @@ if($cad){
 
           $updatecontas = mysqli_query ($con,"UPDATE contas_encomendas set valorpg = '$valorformatado', idsituacao = '$idsituacao' where idencomenda=$idencomenda")  or die(mysqli_error($con)); 
 
-criaLog($con,"Encomenda Editada", "viagem numero $idencomenda"); ?>   
+//criaLog($con,"Encomenda Editada", "viagem numero $idencomenda"); ?>   
                     <?php
     $_SESSION['msg'] = "<div class='alert alert-success' role='alert'>Encomenda Editada com Sucesso<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
     //header("Location: cliente_imagens.php?idcliente=$idcliente");

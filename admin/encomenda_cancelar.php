@@ -38,7 +38,7 @@ if($cad){
 
           $updatecontas = mysqli_query ($con,"UPDATE contas_encomendas set idsituacao = 3 where idencomenda=$idencomenda")  or die(mysqli_error($con));
 
-criaLog("Encomenda Cancelada", "Encomenda numero $idencomenda"); ?>   
+//criaLog("Encomenda Cancelada", "Encomenda numero $idencomenda"); ?>   
                     <?php
 		$_SESSION['msg'] = "<div class='alert alert-success' role='alert'>Encomenda Cancelada com Sucesso<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
 		//header("Location: cliente_imagens.php?idcliente=$idcliente");
